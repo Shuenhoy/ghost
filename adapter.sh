@@ -4,7 +4,7 @@
 # ghost will cover them in production mode
 export GHOST_SOURCE="/usr/src/ghost"
 export GHOST_CONTENT="/usr/src/ghost/content"
-
+unzip content.zip -d $GHOST_CONTENT
 is_mysql=0
 has_url=0
 
