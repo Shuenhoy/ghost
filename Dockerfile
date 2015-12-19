@@ -7,7 +7,7 @@ ADD content.zip /opt/content.zip
 RUN chmod +x /opt/adapter.sh 
 RUN apt-get update &&
 apt-get install unzip &&
-unzip content.zip -d /usr/src/ghost/content &&
+unzip content.zip -d /usr/src/ghost/content
 
 ENTRYPOINT ["/opt/adapter.sh", "/entrypoint.sh"]
 CMD ["npm", "start", "--production"]
